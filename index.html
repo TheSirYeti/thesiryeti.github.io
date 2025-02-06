@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Interactive Portfolio</title>
+	<title>Interactive Portfolio</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
-    <div id="unity-container" style="width: 100%; height: 100%">
+	<div id="unity-container" style="width: 100%; height: 100%">
       <canvas id="unity-canvas" width=auto height=auto></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
@@ -18,6 +18,8 @@
       </div>
       <div id="unity-warning"> </div>
       <div id="unity-footer">
+        <div id="unity-logo-title-footer"></div>
+        <div id="unity-fullscreen-button"></div>
         <div id="unity-build-title">Interactive Portfolio</div>
       </div>
     </div>
@@ -96,7 +98,7 @@
 
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
-        canvas.style.width = "100%";
+		canvas.style.width = "100%";
         canvas.style.height = "100%";
       }
 
